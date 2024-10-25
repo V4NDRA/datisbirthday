@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oval Buttons with Hover Effect</title>
+  <style>
+    body {
+        background: radial-gradient(circle 500px at center, rgb(226, 15, 15), rgb(104, 7, 7));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex; /* Use flexbox to arrange buttons horizontally */
+      gap: 30px; /* Space between buttons */
+    }
+
+    .oval-button {
+      width: 300px; /* Width of the oval */
+      height: 300px; /* Height of the oval */
+      background-color: rgb(214, 86, 86); /* Button color */
+      border: antiquewhite;
+      border-radius: 200px; /* Creates the oval shape */
+      cursor: grab;
+      transition: transform 0.3s ease; /* Smooth transition */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 16px;
+    }
+
+    /* Hover effect */
+    .oval-button:hover {
+      transform: scale(1.1); /* Grow to 110% on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="https://open.spotify.com/playlist/3Gi66VmznODNirWMzzMYpV?si=aa08fef45dc94654" target="_blank" class="oval-button">Spotify Playlist</a>
+    <a href="letter.html" target="_blank" class="oval-button">birthday letter </a>
+    <a href="candle.html" target="_blank" class="oval-button">YOUR CAKE</a>
+
+  </div>
+</body>
+</html>
+

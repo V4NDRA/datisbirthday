@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Page</title>
+  <style>
+    body {
+        background: radial-gradient(circle 500px at center, rgb(226, 15, 15), rgb(104, 7, 7));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .gif {
+      width: 200px; /* Adjust as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin: 20px 0;
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      color: white; /* Text color */
+      display: inline-block; /* Make it behave like a button */
+    }
+
+    .yes {
+      background-color: green;
+    }
+
+    .no {
+      background-color: red;
+    }
+
+    .yes:hover {
+      background-color: darkgreen; /* Darker shade on hover */
+    }
+
+    .no:hover {
+      background-color: darkred; /* Darker shade on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Are you Dati?</h1>
+  <img src="./955ff5a8873d6a1160edfdd01fd676fe.gif" alt="Confirmation GIF" class="gif"> <!-- Replace with your GIF URL -->
+  <div>
+    <a href="yes.html" class="button yes">Yes</a> <!-- Link to Yes action -->
+    <a href="no.html" class="button no">No</a> <!-- Link to No action -->
+  </div>
+</body>
+</html>
+
