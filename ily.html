@@ -6,7 +6,7 @@
 
   <title>Password Protected Page</title>
   <style>
-    /* Center content on the page */
+   
     body {
         background: radial-gradient(circle 500px at center, rgb(226, 15, 15), rgb(104, 7, 7));
       display: flex;
@@ -17,20 +17,20 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Container styling */
+   
     .container {
       text-align: center;
     }
 
-    /* Stack input and button vertically */
+    
     .input-group {
       display: flex;
       flex-direction: column;
-      gap: 10px; /* Adds space between input and button */
-      margin-top: 15px; /* Adds space between h2 and input */
+      gap: 10px; 
+      margin-top: 15px; 
     }
 
-    /* Style for input and button */
+    
     input, button {
       padding: 8px;
       font-size: 16px;
@@ -62,10 +62,10 @@
   <script>
     function checkPassword() {
       const password = document.getElementById("password").value;
-      const correctPassword = "datistation"; // Replace this with your desired password
+      const correctPassword = "datistation"; 
 
       if (password === correctPassword) {
-        window.location.href = "hm.html"; // Replace with your destination page
+        window.location.href = "hm.html";
       } else {
         alert("Incorrect password. Try again.");
       }
