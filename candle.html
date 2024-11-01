@@ -24,44 +24,44 @@
       margin-bottom: 20px;
       padding: 10px;
       font-size: 16px;
-      border: 2px solid #e74c3c; /* Border color */
+      border: 2px solid #e74c3c;
       border-radius: 5px;
-      position: relative; /* Set position for overlay */
-      z-index: 1; /* Ensure input is above the cake */
+      position: relative; 
+      z-index: 1;
     }
 
     .cake {
       position: relative;
-      width: 250px; /* Increased width of the cake */
-      height: 120px; /* Increased height of the cake */
-      background-color: #a1a8d3; /* Cake color */
-      border-radius: 15px; /* Round the cake corners */
-      margin-bottom: 20px; /* Space between cake and GIF */
-      transition: background-color 0.3s ease; /* Smooth color transition */
-      z-index: 0; /* Cake should be below the input */
+      width: 250px; 
+      height: 120px;
+      background-color: #a1a8d3;
+      border-radius: 15px; 
+      margin-bottom: 20px; 
+      transition: background-color 0.3s ease; 
+      z-index: 0;
     }
 
     .candle {
       position: absolute;
-      width: 10px; /* Width of the candle */
-      height: 30px; /* Height of the candle */
-      background-color: #ffcc00; /* Candle color */
-      border-radius: 5px; /* Round the candle edges */
-      top: -30px; /* Position the candle above the cake */
-      animation: flicker 1s infinite; /* Flickering animation */
-      z-index: 1; /* Ensure candles are above the cake */
+      width: 10px;
+      height: 30px; 
+      background-color: #ffcc00;
+      border-radius: 5px; 
+      top: -30px;
+      animation: flicker 1s infinite; 
+      z-index: 1; 
     }
 
     .candle:nth-child(1) {
-      left: 40px; /* Position first candle */
+      left: 40px;
     }
 
     .candle:nth-child(2) {
-      left: 110px; /* Position second candle */
+      left: 110px; 
     }
 
     .candle:nth-child(3) {
-      left: 180px; /* Position third candle */
+      left: 180px;
     }
 
     @keyframes flicker {
@@ -69,18 +69,18 @@
         opacity: 1;
       }
       50% {
-        opacity: 0.5; /* Flicker effect */
+        opacity: 0.5; 
       }
     }
 
     .disappear {
-      display: none; /* Make the candle disappear completely */
+      display: none; 
     }
 
     .wish-gif {
-      width: 200px; /* Set a width for the GIF */
-      height: auto; /* Maintain aspect ratio */
-      margin-top: 20px; /* Space above the GIF */
+      width: 200px;
+      height: auto; 
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -95,7 +95,6 @@
     <div class="candle" id="candle3"></div>
   </div>
 
-  <!-- Add your GIF here -->
   <img src="./08536ee62c04cf7f03548c087cc75a40.gif" alt="Birthday Wish GIF" class="wish-gif">
 
   <script>
@@ -106,7 +105,7 @@
       if (wishInput.value.trim() === '') {
         alert("You have to wish >:c");
       } else {
-        // Make each candle disappear when the cake is clicked
+        
         candles.forEach(candle => {
           candle.classList.add('disappear');
         });
